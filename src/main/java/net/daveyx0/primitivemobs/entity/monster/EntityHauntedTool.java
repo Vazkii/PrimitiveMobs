@@ -192,13 +192,13 @@ public class EntityHauntedTool extends EntityMob {
 
         if (!stack.isEmpty() && !getEntityWorld().isRemote)
         {
-	    Random rand = new Random();
-	    int itemDurability = stack.getMaxDamage();
-	    int minDurability = 1;
-	    int maxDurability = itemDurability / 4;
+            Random rand = new Random();
+            int itemDurability = stack.getMaxDamage();
+            int minDurability = 1;
+            int maxDurability = itemDurability / 4;
             
-	    maxDurability *= lootingModifier + 1;
-	    stack.setItemDamage(MathHelper.getInt(rand, minDurability, maxDurability));
+            maxDurability *= lootingModifier + 1;
+            stack.setItemDamage(MathHelper.getInt(rand, minDurability, maxDurability));
             this.dropItemStack(stack, 1);
         }
     }
