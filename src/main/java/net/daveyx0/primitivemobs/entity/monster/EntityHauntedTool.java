@@ -192,6 +192,8 @@ public class EntityHauntedTool extends EntityMob {
 
         if (!stack.isEmpty() && !getEntityWorld().isRemote)
         {
+            if (lootingModifier > 3)
+                lootingModifier = 3;
             Random rand = new Random();
             int itemDurability = stack.getMaxDamage();
             int minDurability = 1;
