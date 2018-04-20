@@ -200,7 +200,7 @@ public class EntityHauntedTool extends EntityMob {
             int maxDurability = itemDurability / 4;
             
             maxDurability *= lootingModifier + 1;
-            stack.setItemDamage(MathHelper.getInt(rand, minDurability, maxDurability));
+            stack.setItemDamage(itemDurability - MathHelper.getInt(rand, minDurability, maxDurability));
             this.dropItemStack(stack, 1);
         }
     }
