@@ -38,6 +38,7 @@ import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
 
@@ -191,19 +192,16 @@ public class EntityHauntedTool extends EntityMob {
 
         if (!stack.isEmpty() && !getEntityWorld().isRemote)
         {
-            int i = 1;
-
-            if (lootingModifier > 0)
-            {
-                lootingModifier = 0;
-            }
-
-            for (int j = 0; j < i; ++j)
-            {
-            	ItemStack newStack = new ItemStack(stack.getItem(), 1, stack.getMetadata());
-            	
-                this.dropItemStack(newStack, 1);
-            }
+            if (lootingModifier > 3)
+                lootingModifier = 3;
+            Random rand = new Random();
+            int itemDurability = stack.getMaxDamage();
+            int minDurability = 1;
+            int maxDurability = itemDurability / 4;
+            
+            maxDurability *= lootingModifier + 1;
+            stack.setItemDamage(itemDurability - MathHelper.getInt(rand, minDurability, maxDurability));
+            this.dropItemStack(stack, 1);
         }
     }
     
