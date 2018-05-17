@@ -27,8 +27,8 @@ item.primitivemobs:camouflage_dye.name=迷彩染料
 item.primitivemobs:dodo.name=生渡渡鸟肉
 item.primitivemobs:cooked_dodo.name=烤渡渡鸟肉
 item.primitivemobs:dodo_egg.name=渡渡鸟蛋
-item.primitivemobs:mimic_orb.name=Mimic Orb
-item.primitivemobs:summoner_orb.name=Summon Orb
+item.primitivemobs:mimic_orb.name=宝物球
+item.primitivemobs:summoner_orb.name=召唤球
 
 #Armor
 
