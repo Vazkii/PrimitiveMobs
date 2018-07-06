@@ -52,7 +52,7 @@ public class ColorUtil
 	{
 			int[] color = new int[3];
 			int colorMultiplier = -1;
-			
+			state = state.getBlock().getExtendedState(state,worldObj,pos);
 			colorMultiplier = Minecraft.getMinecraft().getBlockColors().colorMultiplier(state, worldObj, pos, 0);
 					
 			if(state.getBlock() != Blocks.AIR)

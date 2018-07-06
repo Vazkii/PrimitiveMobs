@@ -370,7 +370,7 @@ public class EntityChameleon extends EntityTameable
 		
 		BlockPos pos = new BlockPos(i, j, k);
 		IBlockState state = entity.getEntityWorld().getBlockState(pos);
-		
+        state = state.getBlock().getExtendedState(state,entity.getEntityWorld(),pos);
 		int colorMultiplier = Minecraft.getMinecraft().getBlockColors().colorMultiplier(state, getEntityWorld(), pos, 0);
 		
 		//PrimitiveMobsLogger.info(worldObj, state + " " + colorMultiplier);
