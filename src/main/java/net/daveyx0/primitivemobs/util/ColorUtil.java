@@ -29,6 +29,7 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.BiomeColorHelper;
+import net.minecraftforge.common.property.IExtendedBlockState;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -52,7 +53,7 @@ public class ColorUtil
 	{
 			int[] color = new int[3];
 			int colorMultiplier = -1;
-			
+			state = state.getBlock().getExtendedState(state,worldObj,pos);
 			colorMultiplier = Minecraft.getMinecraft().getBlockColors().colorMultiplier(state, worldObj, pos, 0);
 					
 			if(state.getBlock() != Blocks.AIR)
