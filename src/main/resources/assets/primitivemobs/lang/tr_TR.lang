@@ -20,6 +20,11 @@ entity.primitivemobs.lost_miner.name=Kayıp Madenci
 entity.primitivemobs.traveling_merchant.name=Seyyar Satıcı
 entity.primitivemobs.dodo.name=Dodo
 entity.primitivemobs.mimic.name=Mimic
+entity.primitivemobs.goblin.name=Goblin
+entity.primitivemobs.flame_spewer.name=Alev Tükürücü
+entity.primitivemobs.harpy.name=Harpia
+entity.primitivemobs.sheepman.name=Koyunadam
+entity.primitivemobs.void_eye.name=Void Göz
 
 #Items
 
@@ -28,6 +33,13 @@ item.primitivemobs:dodo.name=Çiğ Dodo Eti
 item.primitivemobs:cooked_dodo.name=Pişmiş Dodo Eti
 item.primitivemobs:dodo_egg.name=Dodo Yumurtası
 item.primitivemobs:mimic_orb.name=Mimic Küresi
+item.primitivemobs:wonder_sap.name=Wonder Sap
+item.primitivemobs:spider_egg.name=Örümcek Yumurtası
+item.primitivemobs:mysteryegg1.name=Gizemli Yumurta
+item.primitivemobs:mysteryegg2.name=Gizemli Yumurta
+item.primitivemobs:mysteryegg3.name=Gizemli Yumurta
+item.primitivemobs:spider_eggshell.name=Örümcek Yumurtası Kabuğu
+item.primitivemobs:goblin_mace.name=Goblin Topuzu
 
 #Armor
 
@@ -41,15 +53,22 @@ entity.Villager.primitivemobs.ore_miner=Cevher Madencisi
 entity.Villager.primitivemobs.gem_miner=Mücevher Madencisi
 entity.Villager.primitivemobs.stone_miner=Taş Madencisi
 entity.Villager.primitivemobs.traveling_merchant=Seyyar Satıcı
+entity.Villager.primitivemobs.sheepman_scavenger=Çöpçü Koyunadam
+entity.Villager.primitivemobs.sheepman_alchemist=Kimyager Koyunadam
+entity.Villager.primitivemobs.sheepman_thief=Hırsız Koyunadam
 
 #JER Integration
 JER.catagory.primitivemobs.mimic_treasure=Mimic Hazine Ganimeti
 JER.catagory.primitivemobs.mimic_trap=Mimic Tuzak Ganimeti
 entity.Villager.primitivemobs.fake_traveling_merchant=Seyyar Satıcı
 
+#Tamed
+death.tamed.sitting =%1$s şuan oturuyor.
+death.tamed.wandering =%1$s şuan geziniyor.
+death.tamed.following =%1$s şuan takip ediyor.
+
 #Old
 
-entity.primitivemobs.Sheepman.name=Sheepman
 entity.primitivemobs.Summoner.name=Summoner
 entity.primitivemobs.Minion.name=Skull Minion
 entity.primitivemobs.SheepmanSmith.name=Sheepman Smith
@@ -58,7 +77,6 @@ entity.primitivemobs.OreGolem.name=Ore Golem
 entity.primitivemobs.BlazeCow.name=Blaze Cow
 entity.primitivemobs.EnderChicken.name=Ender Chicken
 entity.primitivemobs.Sheeper.name=Sheeper
-entity.primitivemobs.Goblin.name=Goblin
 entity.primitivemobs.BewitchedTomeSpecial.name=Dungeon Bewitched Tome
 entity.primitivemobs.Wizard.name=Wizard
 
