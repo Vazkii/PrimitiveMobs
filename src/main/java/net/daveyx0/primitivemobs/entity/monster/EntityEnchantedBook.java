@@ -218,12 +218,4 @@ public class EntityEnchantedBook extends EntityMob implements IMultiMob {
     {
         return super.getCanSpawnHere() && this.posY < 40D;
     }
-    
-    public boolean isCreatureType(EnumCreatureType type, boolean forSpawnCount)
-    {
-    	if(type == EnumCreatureType.MONSTER){return false;}
-    	return super.isCreatureType(type, forSpawnCount);
-    }
-  
-
 }

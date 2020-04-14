@@ -767,11 +767,5 @@ public class EntityBrainSlime extends EntitySlime implements IMultiMob {
 	        BlockPos blockpos = new BlockPos(i, j, k);
 	        return this.getEntityWorld().getBlockState(blockpos.down()).getBlock() == this.spawnableBlock;
 	    }
-	    
-	    public boolean isCreatureType(EnumCreatureType type, boolean forSpawnCount)
-	    {
-	    	if(type == EnumCreatureType.MONSTER){return false;}
-	    	return super.isCreatureType(type, forSpawnCount);
-	    }
 }
 	

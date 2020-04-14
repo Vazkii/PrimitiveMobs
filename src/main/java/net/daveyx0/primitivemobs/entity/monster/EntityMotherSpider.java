@@ -262,11 +262,4 @@ public class EntityMotherSpider extends EntityPrimitiveSpider implements IMultiM
     {
         return PrimitiveMobsLootTables.ENTITIES_MOTHERSPIDER;
     }
-    
-    public boolean isCreatureType(EnumCreatureType type, boolean forSpawnCount)
-    {
-    	if(type == EnumCreatureType.MONSTER){return false;}
-    	return super.isCreatureType(type, forSpawnCount);
-    }
-    
 }

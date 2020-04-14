@@ -439,7 +439,8 @@ public class EntityVoidEye extends EntityMMFlyingCreature implements IMultiMob {
     
     public boolean isCreatureType(EnumCreatureType type, boolean forSpawnCount)
     {
-    	if(type == EnumCreatureType.MONSTER){return false;}
+      // This mob is hostile, so should be counted as a monster.
+    	if(type == EnumCreatureType.MONSTER){return true;}
     	return super.isCreatureType(type, forSpawnCount);
     }
 

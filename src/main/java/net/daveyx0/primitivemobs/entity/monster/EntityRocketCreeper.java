@@ -261,11 +261,4 @@ public class EntityRocketCreeper extends EntityPrimitiveCreeper implements IMult
             this.world.spawnEntity(entityareaeffectcloud);
         }
     }
-    
-    public boolean isCreatureType(EnumCreatureType type, boolean forSpawnCount)
-    {
-    	if(type == EnumCreatureType.MONSTER){return false;}
-    	return super.isCreatureType(type, forSpawnCount);
-    }
-
 }

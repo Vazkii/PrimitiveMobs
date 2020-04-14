@@ -357,7 +357,7 @@ public class EntityLilyLurker extends EntityMMSwimmingCreature implements IMulti
 
     public boolean isCreatureType(EnumCreatureType type, boolean forSpawnCount)
     {
-    	if(type == EnumCreatureType.MONSTER){return false;}
+    	if(type == EnumCreatureType.MONSTER){return true;}
     	return super.isCreatureType(type, forSpawnCount);
     }
 }
