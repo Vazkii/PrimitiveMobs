@@ -179,6 +179,8 @@ public class EntityFilchLizard extends EntityCreature implements IMultiMobPassiv
     
     public boolean isCreatureType(EnumCreatureType type, boolean forSpawnCount)
     {
+      // Actually, this mob behave a bit hostilely, so should be treated as a monster.
+      if(type == EnumCreatureType.MONSTER && forSpawnCount == false){return true;}
     	return super.isCreatureType(type, forSpawnCount);
     }
 }

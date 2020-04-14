@@ -254,10 +254,4 @@ public class EntityHarpy extends EntityMMFlyingMob implements IMultiMob {
     {
         return PrimitiveMobsSoundEvents.ENTITY_HARPY_HURT;
     }
-    
-    public boolean isCreatureType(EnumCreatureType type, boolean forSpawnCount)
-    {
-    	if(type == EnumCreatureType.MONSTER){return false;}
-    	return super.isCreatureType(type, forSpawnCount);
-    }
 }

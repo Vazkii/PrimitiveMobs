@@ -108,10 +108,4 @@ public class EntityGoblin extends EntityMob implements IMultiMob
     {
         return (this.rand.nextFloat() - this.rand.nextFloat()) * 0.2F + 2.0F;
     }
-    
-    public boolean isCreatureType(EnumCreatureType type, boolean forSpawnCount)
-    {
-    	if(type == EnumCreatureType.MONSTER){return false;}
-    	return super.isCreatureType(type, forSpawnCount);
-    }
 }

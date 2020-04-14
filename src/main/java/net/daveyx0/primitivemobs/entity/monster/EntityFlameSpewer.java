@@ -552,11 +552,4 @@ public class EntityFlameSpewer extends EntityMob implements IRangedAttackMob, IM
     {
         return this.posY < 64;
     }
-	
-    public boolean isCreatureType(EnumCreatureType type, boolean forSpawnCount)
-    {
-    	if(type == EnumCreatureType.MONSTER){return false;}
-    	return super.isCreatureType(type, forSpawnCount);
-    }
-
 }

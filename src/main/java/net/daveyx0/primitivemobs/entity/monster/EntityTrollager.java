@@ -644,11 +644,4 @@ public class EntityTrollager extends EntityMob implements IAnimatedMob, IMultiMo
 		
 		animVar = var;
 	}
-	
-    public boolean isCreatureType(EnumCreatureType type, boolean forSpawnCount)
-    {
-    	if(type == EnumCreatureType.MONSTER){return false;}
-    	return super.isCreatureType(type, forSpawnCount);
-    }
-    
 }

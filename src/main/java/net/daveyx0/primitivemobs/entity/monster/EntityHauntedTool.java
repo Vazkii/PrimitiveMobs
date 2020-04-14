@@ -319,10 +319,4 @@ public class EntityHauntedTool extends EntityMob implements IMultiMob {
 
 		return 0.2D;
 	}
-
-    public boolean isCreatureType(EnumCreatureType type, boolean forSpawnCount)
-    {
-    	if(type == EnumCreatureType.MONSTER){return false;}
-    	return super.isCreatureType(type, forSpawnCount);
-    }
 }

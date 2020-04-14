@@ -820,6 +820,8 @@ public class EntityGroveSprite extends EntityCreature implements IMultiMobPassiv
     
     public boolean isCreatureType(EnumCreatureType type, boolean forSpawnCount)
     {
+      // For compatibility, return true here. Open Moduler Turrets cannot detect him without this line.
+      if(type == EnumCreatureType.CREATURE){return true;}
     	return super.isCreatureType(type, forSpawnCount);
     }
 }

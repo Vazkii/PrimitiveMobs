@@ -406,7 +406,8 @@ public class EntityBabySpider extends EntityPrimitiveSpider implements IMultiMob
 
     public boolean isCreatureType(EnumCreatureType type, boolean forSpawnCount)
     {
-    	if(type == EnumCreatureType.MONSTER){return false;}
+      // Ignore spawn count
+    	if(type == EnumCreatureType.MONSTER && forSpawnCount){return false;}
     	return super.isCreatureType(type, forSpawnCount);
     }
     

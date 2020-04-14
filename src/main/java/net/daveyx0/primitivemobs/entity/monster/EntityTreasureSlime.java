@@ -500,11 +500,4 @@ public class EntityTreasureSlime extends EntityTameableSlime implements IMultiMo
     {
         return this.getEntityWorld().getDifficulty() != EnumDifficulty.PEACEFUL && EntityUtil.isValidMobLightLevel(this);
     }
-    
-    public boolean isCreatureType(EnumCreatureType type, boolean forSpawnCount)
-    {
-    	if(type == EnumCreatureType.MONSTER){return false;}
-    	return super.isCreatureType(type, forSpawnCount);
-    }
-        
 }

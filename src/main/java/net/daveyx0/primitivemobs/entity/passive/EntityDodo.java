@@ -180,7 +180,8 @@ public class EntityDodo extends EntityChicken implements IMultiMobPassive
     
     public boolean isCreatureType(EnumCreatureType type, boolean forSpawnCount)
     {
-    	if(type == EnumCreatureType.CREATURE){return false;}
+      // This mob doesn't block other animals on spawning.
+    	if(type == EnumCreatureType.CREATURE && forSpawnCount){return false;}
     	return super.isCreatureType(type, forSpawnCount);
     }
 
